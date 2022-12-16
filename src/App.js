@@ -1,11 +1,26 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import About from './pages/aboutUs';
+import Contact from './pages/contactUs';
+import Login from './components/forms/login';
+import Signup from './components/forms/signup';
+import New from './pages/new';
+import Home from './pages/homePage';
 
-export default function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/userdata" element={<Data />} />
+        <Route path="/new" element={<New />} />
+      </Routes>
+    </>
   );
-}
+};
+
+export default App;
