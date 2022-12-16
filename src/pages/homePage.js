@@ -6,9 +6,6 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-      {/* <CollapsibleExample />
-      <Carousel />
-      <Cards /> */}
       <div className="outer">
         <h1>Home Page</h1>
       </div>

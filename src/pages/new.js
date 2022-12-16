@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Carousel from '../components/layout/Carousel';
-import Cards from '../components/layout/Cards';
+// import Carousel from '../components/layout/Carousel';
+// import Cards from '../components/layout/Cards';
 
 function NavbarNew() {
   // get username first letter from localstorage
@@ -54,8 +54,6 @@ const New = () => {
   return (
     <>
       <NavbarNew />
-      <Carousel />
-      <Cards />
       <div className="outer">
         <h1>hello its me</h1>
       </div>
