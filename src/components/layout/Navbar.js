@@ -12,7 +12,7 @@ function CollapsibleExample() {
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto linkContainer">
             <NavLink className="nav-link " aria-current="page" to="/">
               Home
             </NavLink>
@@ -22,8 +22,6 @@ function CollapsibleExample() {
             <NavLink className="nav-link " aria-current="page" to="/contact">
               Contact
             </NavLink>
-          </Nav>
-          <Nav>
             <NavLink className="nav-link " aria-current="page" to="/login">
               <button className="btn btn-outline-primary">Login</button>
             </NavLink>

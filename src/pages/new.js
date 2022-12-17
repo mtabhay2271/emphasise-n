@@ -39,9 +39,7 @@ function NavbarNew() {
               <NavDropdown.Item eventKey="4.1">{firstLetter}</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavLink className="nav-link " aria-current="page" to="/">
-                {/* <NavDropdown.Item eventKey="4.4"> */}
                 <button className="btn btn-outline-dark">Logout</button>
-                {/* </NavDropdown.Item> */}
               </NavLink>
             </NavDropdown>
           </button>
