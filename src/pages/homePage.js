@@ -1,14 +1,17 @@
 import React from 'react';
-import CollapsibleExample from '../components/layout/Navbar';
+import NavbarBasic from '../components/layout/Navbar';
 import ControlledCarousel from '../components/layout/Carousel';
 import CardComponent from '../components/layout/Cards';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
+  const loginDetails = JSON.parse(localStorage.getItem('loginDone'));
+  console.log(loginDetails);
+
   return (
     <>
-      <CollapsibleExample />
+      <NavbarBasic isLogin={loginDetails} />
       <ControlledCarousel />
 
       <div className="outer text-center">

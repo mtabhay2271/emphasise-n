@@ -13,6 +13,11 @@ const Login = () => {
     let user = { username, password };
     console.log(user);
 
+    let x = [];
+    x.push('true');
+    console.log(x);
+    localStorage.setItem('loginDone', JSON.stringify(x));
+
     // stroing username in localstorage
     let y = [];
     y.push(username);
@@ -108,7 +113,7 @@ const Login = () => {
                           <NavLink
                             className="nav-link "
                             aria-current="page"
-                            to="/new"
+                            to="/"
                           >
                             <button
                               onClick={userlogin}
