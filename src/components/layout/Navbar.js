@@ -19,6 +19,9 @@ function CollapsibleExample() {
             <NavLink className="nav-link " aria-current="page" to="/about">
               About
             </NavLink>
+            <NavLink className="nav-link " aria-current="page" to="/service">
+              Service
+            </NavLink>
             <NavLink className="nav-link " aria-current="page" to="/contact">
               Contact
             </NavLink>

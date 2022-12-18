@@ -15,10 +15,16 @@ p {
   display: grid;
   place-items: center;
 }
-
-.carouselTitle {
-  outline: 2px solid red;
+.carouselItem {
+  height: 100vh;
+  outline: 5px solid red;
+  position: relative;
 }
+.carouselTitle {
+  position: absolute;
+  transform: translateY(-100%);
+}
+
 .outer {
   margin-top: 100px;
 }
