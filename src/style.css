@@ -20,9 +20,10 @@ p {
   outline: 5px solid red;
   position: relative;
 }
-.carouselTitle {
-  position: absolute;
-  transform: translateY(-100%);
+
+.carouselItem img {
+  height: 100%;
+  width: 100%;
 }
 
 .outer {
