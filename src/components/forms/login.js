@@ -5,30 +5,13 @@ const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  // useEffect(()=>{
-  //     alert("this is me");
-  // })
-
   const userlogin = async () => {
     let user = { username, password };
-    console.log(user);
-
-    let x = [];
-    x.push('true');
-    console.log(x);
-    localStorage.setItem('loginDone', JSON.stringify(x));
 
     // stroing username in localstorage
     let y = [];
     y.push(username);
-    console.log(y);
     localStorage.setItem('userdata', JSON.stringify(y));
-
-    // let x = ((username[0]).toUpperCase());
-    // let y = [];
-    // y.push(x);
-    // console.log(y);
-    // localStorage.setItem("userdata", JSON.stringify(y));
 
     let result = await fetch('http://localhost:8000/user/login', {
       method: 'POST',

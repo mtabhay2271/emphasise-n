@@ -6,12 +6,11 @@ import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
-  const loginDetails = JSON.parse(localStorage.getItem('loginDone'));
-  console.log(loginDetails);
+
 
   return (
     <>
-      <NavbarBasic isLogin={loginDetails} />
+      <NavbarBasic />
       <ControlledCarousel />
 
       <div className="outer text-center">

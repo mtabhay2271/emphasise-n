@@ -4,7 +4,6 @@ import About from './pages/aboutUs';
 import Contact from './pages/contactUs';
 import Login from './components/forms/login';
 import Signup from './components/forms/signup';
-import New from './pages/new';
 import Home from './pages/homePage';
 import Service from './pages/service';
 
@@ -18,7 +17,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/new" element={<New />} />
       </Routes>
     </>
   );
