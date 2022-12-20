@@ -13,7 +13,7 @@ const Login = () => {
     y.push(username);
     localStorage.setItem('userdata', JSON.stringify(y));
 
-    let result = await fetch('http://localhost:3000/user/login', {
+    let result = await fetch('http://localhost:4000/user/login', {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {

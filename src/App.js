@@ -7,6 +7,7 @@ import Signup from './components/forms/signup';
 import Home from './pages/homePage';
 import Service from './pages/service';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NotFound from './pages/notFound';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="*" element={<NotFound/>}  />
       </Routes>
     </>
   );

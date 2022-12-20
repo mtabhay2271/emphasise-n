@@ -97,6 +97,12 @@ padding: 0;
   padding: 100px 200px;
 }
 
+.errordiv{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
 .contact_data Button {
   width: 100px;
 }
