@@ -6,7 +6,7 @@ const About = () => {
     <>
       <NavbarBasic />
       <div className="outer">
-        <h1>Abouit Us Page</h1>
+        <h3>Home/About Us </h3>
       </div>
     </>
   );

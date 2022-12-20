@@ -4,9 +4,9 @@ import NavbarBasic from '../components/layout/Navbar';
 const Service = () => {
   return (
     <>
-      <NavbarBasic />
+    <NavbarBasic />
       <div className="outer">
-        <h1>Service Page</h1>
+        <h3>Home/Service  </h3>
       </div>
     </>
   );

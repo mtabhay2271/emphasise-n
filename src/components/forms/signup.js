@@ -10,9 +10,8 @@ const Signup = () => {
   const submitForm = async () => {
     let user = { username, email, password, userType };
     console.log(user);
-    
-    alert("User is successfully registered");
 
+    alert('User is successfully registered');
 
     let result = await fetch('http://localhost:4000/user/signup', {
       method: 'POST',

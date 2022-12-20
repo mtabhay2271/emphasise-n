@@ -1,19 +1,17 @@
 import React from 'react';
-import NavbarBasic from '../components/layout/Navbar';
 import ControlledCarousel from '../components/layout/Carousel';
 import CardComponent from '../components/layout/Cards';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
+import NavbarBasic from '../components/layout/Navbar';
 
 const Home = () => {
-
-
   return (
     <>
       <NavbarBasic />
       <ControlledCarousel />
 
-      <div className="outer text-center">
+      <div className=" text-center">
         <h1>Cards</h1>
         <div class="container">
           <div class="row">
@@ -44,7 +42,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="outer text-center">
+      <div className=" text-center">
         <h1>We Are Emphasis Tech Agency</h1>
         <p>
           Offering High-Tech Solutions to Enterprises, Startups, and Small
@@ -116,7 +114,7 @@ const Home = () => {
       <div className="section text-center">
         <h1>latest post</h1>
       </div>
-      <div className="outer">
+      <div className="">
         <h1>footer</h1>
       </div>
     </>
