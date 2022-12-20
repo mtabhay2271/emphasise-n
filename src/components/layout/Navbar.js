@@ -50,11 +50,11 @@ function Component() {
 
 function NavbarBasic() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" className="navbar">
+    <Navbar collapseOnSelect expand="lg"  bg="dark" variant="dark" fixed="top" className="navbar">
       <Container>
         <Navbar.Brand href="#home"> React Bootstrap </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar_toggle" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto d-flex navbar_Link ">
             <NavLink className="nav-link " aria-current="page" to="/">
