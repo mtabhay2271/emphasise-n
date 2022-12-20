@@ -5,12 +5,16 @@ const Signup = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [userType, setuserType] = useState('');
 
   const submitForm = async () => {
-    let user = { username, email, password };
+    let user = { username, email, password, userType };
     console.log(user);
+    
+    alert("User is successfully registered");
 
-    let result = await fetch('http://localhost:8000/user/signup', {
+
+    let result = await fetch('http://localhost:4000/user/signup', {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {
@@ -89,6 +93,25 @@ const Signup = () => {
                               className="form-control"
                               value={password}
                               onChange={(e) => setPassword(e.target.value)}
+                            />
+                          </div>
+                        </div>
+
+                        <div className="d-flex flex-row align-items-center mb-4">
+                          <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                          <div className="form-outline flex-fill mb-0">
+                            <label
+                              className="form-label"
+                              htmlFor="form3Example5c"
+                            >
+                              UserType
+                            </label>
+                            <input
+                              type="userType"
+                              id="form3Example5c"
+                              className="form-control"
+                              value={userType}
+                              onChange={(e) => setuserType(e.target.value)}
                             />
                           </div>
                         </div>

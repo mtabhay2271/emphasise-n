@@ -6,6 +6,7 @@ import Login from './components/forms/login';
 import Signup from './components/forms/signup';
 import Home from './pages/homePage';
 import Service from './pages/service';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
